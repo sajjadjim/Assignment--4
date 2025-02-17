@@ -8,14 +8,16 @@ function willSuccess(marks) {
   if (marks.length === 0) {
     return false;
   }
-  let passCount = 0;
-  let failCount = 0;
+  let pass = 0;
+  let fail = 0;
   for (let mark of marks) {
     if (mark >= 50) {
-      passCount++;
+      pass++;
     } else {
-      failCount++;
+      fail++;
     }
   }
-  return passCount > failCount;
+  return pass > fail;
 }
+
+console.log(willSuccess([31, 60, 100]));

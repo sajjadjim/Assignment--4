@@ -7,4 +7,6 @@ function calculateVAT(price) {
     return TotalAmount;
   }
 }
-console.log(calculateVAT("100"));
+
+console.log(calculateVAT("1000"));
+console.log(calculateVAT(12000));
